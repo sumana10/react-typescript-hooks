@@ -6,6 +6,8 @@ import { ThemeContextProvider } from './context/ThemeContext';
 import Box from './context/Box';
 import { UserContextProvider } from './context/UserContext';
 import { User } from './context/User';
+import {Counter} from './class/Counter';
+
 
 
 
@@ -16,9 +18,10 @@ function App() {
       {/* <ThemeContextProvider>
         <Box/>
       </ThemeContextProvider> */}
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User/>
-      </UserContextProvider>
+      </UserContextProvider> */}
+      <Counter message="The count value is"/>
     </div>
   );
 }
